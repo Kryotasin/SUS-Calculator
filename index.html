@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SUS Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+<script src="scripts/main.js"></script>
+
+<!-- Header -->
+<div class="jumbotron text-center">
+  <h1>SUS Calculator</h1>
+  <p>A tool to calculate your SUS scores and graph it out!</p>
+</div>
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Enter details for SUS</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="userCount">Number of users</label>
+  <div class="col-md-5">
+  <input id="userCount" name="userCount" type="text" placeholder="Enter number of users " class="form-control input-md" required="">
+  <span class="help-block">Enter the number of users you interviewed in your usability session.</span>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="questionCount">Number of Questions</label>
+  <div class="col-md-5">
+  <input id="questionCount" name="questionCount" type="text" placeholder="10" class="form-control input-md" required="">
+  <span class="help-block">Enter the number of questions you have in your post test questionnaire. Default 10.</span>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="clear">Choose option</label>
+  <div class="col-md-8">
+    <button id="clear" name="clear" class="btn btn-default">Clear </button>
+    <button id="generateForm" name="generateForm" class="btn btn-primary" onclick="myFunction()">Generate Form</button>
+  </div>
+</div>
+</fieldset>
+</form>
+
+  </body>
+</html>
