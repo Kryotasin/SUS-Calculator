@@ -12,8 +12,6 @@ function createQuestionForm() {
   var users = document.getElementById('userCount').value;
   var questions = document.getElementById('questionCount').value;
 
-  alert("Test" + users);
-
   document.getElementById('userCount').value = "";
 
   var form = document.getElementById('container');
@@ -59,4 +57,15 @@ function createQuestionForm() {
       class2.appendChild(input);
     }
   }
+
+  var submit = document.createElement("button");
+  submit.className = "btn btn-primary";
+  submit.innerHTML = "Continue...";
+  submit.onclick = chooseUserWiseOrQuestionWise;
+  form.appendChild(submit);
+}
+
+//Form to choose what kind of data representation to be done
+function chooseUserWiseOrQuestionWise(){
+
 }
