@@ -1,3 +1,6 @@
+var userStore = new Array();
+var questionStore = new Array();
+
 function showHide(inputId) {
   var x = document.getElementById(inputId);
   if (x.style.display === "none") {
@@ -67,5 +70,6 @@ function createQuestionForm() {
 
 //Form to choose what kind of data representation to be done
 function chooseUserWiseOrQuestionWise(){
+
 
 }
